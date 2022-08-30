@@ -1,0 +1,295 @@
+:root {
+    --seaweed: #42661b;
+    --seaweed-light: #507b23;
+    --seaweed-light2: #a3d86a;
+    --cucumber: rgba(203, 239, 187, 0.929);
+    --salmon-light: rgb(250, 172, 146);
+    --salmon-light2: rgb(248, 199, 183);
+    --salmon: rgb(246, 121, 59);
+    --carrot: rgb(248, 137, 10);
+    --eggyellow: rgb(250, 227, 125);
+    --roe: rgb(250, 229, 145);
+    --soysauce: #5a1e08;
+}
+
+
+
+body {
+    align-items: center;
+    background-image: radial-gradient(circle, #333333, #2b2b2b, #0A0A0A); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    overflow: visible;
+    width: 100vw;  
+  }
+  
+  .sushi-board {
+    align-items: center;
+    background: rgb(17, 12, 6);
+    background-image: radial-gradient(rgb(36, 9, 9) 20%, rgb(17,12,6));
+    border: 12px ridge rgb(27,27,27);
+    border-radius: 24px;
+    box-shadow: #0a0a0a76 12px 10px 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    height: 420px;
+    justify-content: center;
+    position: relative;
+    width: 780px;
+}
+
+
+.soy-sauce {
+    --soysauce: #5a1e08;
+    background-image: radial-gradient(var(--soysauce)58%, rgb(240, 209, 163) 61%);
+    border: 2px solid black;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.616) 6px 6px 12px;
+    height: 160px;
+    width: 160px;
+    margin: 0px auto 120px;
+    position: relative;
+}
+
+.drop {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 100%;
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    filter: blur(1px);
+}
+
+.droplet-1 {
+    top: 64px;
+    left: 76px;
+}
+
+.droplet-2 {
+    height: 24px;
+    width: 24px;
+    top: 90px;
+    right: 36px;
+}
+
+/* CHOPSTICKS */
+.chopstick {
+    background-image: linear-gradient(90deg, #863416 70%, #cd704e 70%, #cd704e 80%, 
+    #863416 80%, #863416 86%, #cd704e 86%, #863416 98%, #3f1600 98%);
+    height: 18px;
+    width: 750px;
+    border-radius: 16px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    box-shadow: #0a0a0a76 3px 6px 20px;
+    margin-bottom: 100px;
+}
+
+.chopstick-1 {
+    position: absolute;
+    top: -100px;
+    transform: rotate(-1.5deg);
+}
+
+.chopstick-2 {
+    position: absolute;
+    top: -60px;
+    transform: rotate(-0.5deg);
+}
+
+.sushi {
+    background-image: radial-gradient(var(--salmon-light), var(--salmon) 46%, pink 48%, white 50%, white 55%, var(--seaweed));
+    border: 4px solid var(--seaweed);
+    border-radius: 100%;
+    box-shadow: #4b4c5876 6px 8px 16px;
+    height: 150px;
+    width: 150px;
+    position: relative;
+}
+
+
+/* SALMON-ROE */
+.ele {
+    background: var(--roe);
+    opacity: 0.45;
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 46px;
+    left: 68px;
+    border-radius: 50%;
+}
+
+.ele-a {
+    top: 48px;
+    left: 50px;
+}
+
+.ele-b {
+    top: 50px;
+    left: 84px;
+}
+
+.ele-1 {
+    top: 38px;
+    left: 58px;
+}
+
+.ele-2 {
+    top: 62px;
+    left: 76px;
+}
+
+.ele-3 {
+    top: 74px;
+    left: 54px;
+}
+
+.ele-4 {
+    top: 76px;
+    left: 74px;
+}
+
+.ele-5 {
+    top: 62px;
+    left: 40px;
+}
+
+.ele-6 {
+    top: 68px;
+    left: 90px;
+}
+
+.ele-7 {
+    top: 88px;
+    left: 60px;
+}
+
+/* SUSHI MIDDLE */
+
+.sushi-2 {
+    background: white;
+    background-image: linear-gradient(white 42%, var(--eggyellow) 47%, var(--eggyellow) 53%, white 58%);
+    border: 4px solid var(--seaweed);
+    /* border-radius: 60px 30px 60px 30px; */
+    border-radius: 100px;
+    box-shadow: #4b4c5876 6px 8px 16px;
+    height: 240px;
+    position: relative;
+    width: 120px;
+    /* transform: rotate(0.2deg); */
+}
+
+.sushi-salmon {
+    align-items: center;
+    background: var(--salmon);
+    background-image: linear-gradient(-4deg, var(--salmon)10%, var(--salmon-light2) 11.5%, var(--salmon-light2) 12%, 
+    var(--salmon) 15%, var(--salmon) 30%, var(--salmon-light2) 31.5%, var(--salmon-light2) 32%, 
+    var(--salmon) 37%, var(--salmon) 55%, var(--salmon-light2) 56.5%, var(--salmon-light2) 57%, 
+    var(--salmon) 62%, var(--salmon) 72%, var(--salmon-light2) 73.5%, var(--salmon-light2) 74%, 
+    var(--salmon) 78%, var(--salmon) 88%, var(--salmon-light2) 89%, var(--salmon-light2) 90%, var(--salmon) 92% );
+    border-radius: 44px;
+    box-shadow: #4b2f07b7 2px 4px 6px;
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    width: 110px;
+    opacity: 0.90;
+    position: absolute;
+    bottom: -5px;
+    left: 5px;
+    transform: rotate(-0.5deg);
+}
+
+.sushi-leaf {
+    background: var(--seaweed);
+    background-image: linear-gradient(-50deg, var(--seaweed) 49%, var(--seaweed-light) 50%, var(--seaweed-light) 51%, var(--seaweed)52%);
+    border-radius: 33px 18px 33px 0px;
+    box-shadow: #153305b7 2px 2px 5px;
+    height: 66px;
+    opacity: 0.95;
+    width: 56px;
+    transform: rotate(3deg);
+}
+
+/* SUSHI RIGHT */
+.sushi-3 {
+    background: white;
+    background-image: radial-gradient(var(--eggyellow), var(--eggyellow) 25%, var(--cucumber) 26%, var(--cucumber) 40%, var(--seaweed-light2) 41%, var(--seaweed-light2)42.5%, var(--salmon)43%, var(--salmon-light2) 52%, rgba(255, 255, 255, 0.907) 56%, rgba(255, 255, 255, 0.897) 66%, var(--seaweed-light));
+    border: 4px solid var(--seaweed-light);
+    border-radius: 88% 45%;
+    height: 160px;
+    position: relative;
+    width: 160px;
+    transform: rotate(15deg);
+}
+
+.sushi-seaweed {
+    background: var(--seaweed-light);
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.616) 2px 2px 4px;
+    height: 6px;
+    width: 190px;
+    opacity: 0.9;
+    position: absolute;
+    transform: rotate(-35deg);
+    top: 60px;
+    right: -7px;
+}
+.sushi-seaweed:nth-child(2) {
+    top: 78px;
+    transform: rotate(-30deg);
+    right: -12px;
+}
+.sushi-seaweed:nth-child(3) {
+    top: 92px;
+    transform: rotate(-24deg);
+    right: -20px;
+}
+
+.leaf {
+    background-image: linear-gradient(46deg, var(--seaweed) 49%, var(--seaweed)49%, var(--seaweed-light) 50%, 
+    var(--seaweed-light) 52%);
+    border-radius: 20% 70% 2%;
+    bottom: 2px;
+    height: 80px;
+    width: 80px;
+    right: 45px;
+    position: absolute;
+    transform: rotate(-35deg);
+    opacity: 0.65;
+}
+
+.leaf-1 {
+    bottom: 14px;
+    right: 14px;
+    transform: rotate(5deg);
+    opacity: 0.95;
+
+}
+
+
+p {
+    color: rgba(255, 255, 255, 0.3);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
